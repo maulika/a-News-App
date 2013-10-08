@@ -1,6 +1,6 @@
 /* CSS Document */
 body{
-background:url(../images/background.png);
+background:url(../images/background.png)no-repeat;
 }
 .header{
 background:url(../images/news_header_01.png)no-repeat;
@@ -118,6 +118,7 @@ float:left;
 display:none;
 width:150px;
 left:104px;
+top: -2px;
 position:fixed;
 }
 
