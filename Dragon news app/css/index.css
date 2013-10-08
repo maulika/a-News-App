@@ -1,7 +1,7 @@
 /* CSS Document */
 
 body{
-background:url(../images/background.png);
+background:url(../images/background.png)no-repeat;
 }
 
 .header{
