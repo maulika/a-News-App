@@ -32,6 +32,7 @@ line-height:58px;
 background-color:#C85C94;
 border-bottom:solid 1px #990000;
 color:#FFFFFF;
+ font-size: 11px;
 }
 
 #sub-button{
@@ -48,7 +49,7 @@ color:#FFFFFF;
 	border-radius:7px;
 	border:none;
 	font-family: arial;
-    font-size: 17px;
+    font-size: 11px;
 	margin-top: 0px;
 
 }
@@ -137,4 +138,19 @@ position:fixed;
 #editor img{
  margin-top:-6px;
  float:right;
+}
+
+@media screen and (max-width: 640px) {
+.header{
+background:url(../images/news_header_01.png);
+background-size:640px 58px;
+width:640px;
+height:58px;
+margin:-8px;
+padding:0;
+float:left;
+position:relative;
+}
+
+
 }
