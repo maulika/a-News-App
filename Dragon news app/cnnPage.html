@@ -1,0 +1,179 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Untitled Document</title>
+<link rel="stylesheet" href="css/second.css"/>
+<script src="jquery1.9.1.js"></script>
+<script src="jquery.rss"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+
+$('#one').click( function(){
+ jQuery(function($) {
+       document.getElementById('list').innerHTML = $("#list").rss("http://rss.cnn.com/rss/money_latest.rss", {
+          limit: 20,
+          effect: 'slideFastSynced'
+        })
+      })
+})
+
+
+$('#two').click( function(){
+ jQuery(function($) {
+       document.getElementById('list').innerHTML = $("#list").rss("http://rss.cnn.com/rss/money_topstories.rss", {
+          limit: 20,
+          effect: 'slideFastSynced'
+        })
+      })
+})
+
+
+$('#three').click( function(){
+ jQuery(function($) {
+        document.getElementById('list').innerHTML = $("#list").rss("http://rss.cnn.com/rss/money_mostpopular.rss", {
+          limit: 20,
+          effect: 'slideFastSynced'
+        })
+      })
+})
+
+
+$('#four').click( function(){
+ jQuery(function($) {
+    document.getElementById('list').innerHTML =    $("#list").rss("http://rss.cnn.com/rss/money_news_international.rss", {
+          limit: 20,
+          effect: 'slideFastSynced'
+        })
+      })
+})
+
+$('#five').click( function(){
+ jQuery(function($) {
+       document.getElementById('list').innerHTML = $("#list").rss("http://rss.cnn.com/rss/money_news_economy.rss", {
+          limit: 20,
+          effect: 'slideFastSynced'
+        })
+      })
+})
+
+
+
+});
+</script>
+
+<script type="text/javascript">
+	function showContent(){	
+	var e  = document.getElementById('sub-button');
+	if(e.style.display == 'block')
+          e.style.display = 'none';
+       else
+          e.style.display = 'block';
+	
+	/*document.getElementById("sub-button").style.visibility="visible";
+	return	document.getElementById("sub-button").style.visibility;*/
+		}
+		
+		
+	function hideContent(){	
+	var e  = document.getElementById('sub-button');
+	if(e.style.display == 'block')
+          e.style.display = 'none';
+       else
+          e.style.display = 'block';
+	
+	/*document.getElementById("sub-button").style.visibility="visible";
+	return	document.getElementById("sub-button").style.visibility;*/
+		}	
+	
+	
+</script>
+
+<script type="text/javascript">
+	function showContent2(){	
+	var e  = document.getElementById('editor');
+	
+          e.style.display = 'block';
+      
+	
+	/*document.getElementById("sub-button").style.visibility="visible";
+	return	document.getElementById("sub-button").style.visibility;*/
+		}
+		
+		
+	function hideContent2(){	
+	var e  = document.getElementById('editor');
+	
+          e.style.display = 'none';
+      
+	
+	/*document.getElementById("sub-button").style.visibility="visible";
+	return	document.getElementById("sub-button").style.visibility;*/
+		}	
+	
+	
+</script>
+
+
+</head>
+
+<body>
+
+<div class="header">
+
+<div class="drop-box">
+<input id="drop" type="button" value="News" onclick="showContent()" />
+
+<div id="sub-button">
+<input id="one" type="button" name="" value="All Stories" class="uk-button" onclick="hideContent()"  />
+<input id="two" type="button" name="" value="Top Stories" class="africa-button"  onclick="hideContent()"/>
+<input id="three" type="button" name="" value="Most Popular" class="asia-button" onclick="hideContent()" />
+<input id="four" type="button" name="" value="International" class="asia-button" onclick="hideContent()" />
+<input id="five" type="button" name="" value="Economy" class="asia-button" onclick="hideContent()" />
+</div>
+
+</div>
+<div id="editor">
+<script>
+	(function ($) {
+	  jQuery.expr[':'].Contains = function(a,i,m){
+		  return (a.textContent || a.innerText || "").toUpperCase().indexOf(m[3].toUpperCase())>=0;
+	  };
+
+	  function listFilter(header, list) {
+		var form = $("<form>").attr({"class":"filterform","action":"#"}),
+			input = $("<input>").attr({"class":"filterinput","type":"text","placeholder":"search..."});
+		$(form).append(input).appendTo(editor);
+
+		$(input)
+		  .change( function () {
+			var filter = $(this).val();
+			if(filter) {
+			  $(list).find("a:not(:Contains(" + filter + "))").parent().slideUp();
+			  $(list).find("a:Contains(" + filter + ")").parent().slideDown();
+			} else {
+			  $(list).find("li").slideDown();
+			}
+			return false;
+		  })
+		.keyup( function () {
+			$(this).change();
+		});
+	  }
+
+	  $(function () {
+		listFilter($("#editor"), $("#list"));
+	  });
+	}(jQuery));
+</script>
+<img src="images/cross_03.png" onclick="hideContent2()"/></div>
+<div class="glass-container"><img src="images/search_03.png" onclick="showContent2()"/></div>
+</div>
+
+<div id= "list" style="color:#FFFFFF;">
+ <div class="hi"></div>
+ </div>
+
+
+</body>
+</html>

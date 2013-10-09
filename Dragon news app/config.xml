@@ -1,0 +1,36 @@
+<?xml version   ="1.0" encoding="UTF-8" ?>
+<widget xmlns   = "http://www.w3.org/ns/widgets"
+    xmlns:gap   = "http://phonegap.com/ns/1.0"
+    id          = "com.worldnews.app"
+    versioncode = "1"
+    version     = "0.0.1">
+    
+    <name>World News</name>
+    
+    <content src="index.html"/>
+    
+    <description>
+        World news app
+    </description>
+    
+<author href="https://build.phonegap.com" email="support@phonegap.com">
+       
+Bal moorli
+    
+</author>
+    
+<icon src="icon.png"/>
+
+
+<!-- SPLASH SCREENS -->
+        
+<gap:splash src="splash.png" /> <!-- default 320x480 pixels -->
+    
+
+<preference name="permissions" value="none"/>
+
+
+	
+	<access origin="*" />
+</widget>
+

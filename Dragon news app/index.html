@@ -1,0 +1,94 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Untitled Document</title>
+<link rel="stylesheet" href="css/index.css"/>
+<script type="text/javascript">
+$(document).ready(function(){
+
+$('#one').click( function(){
+ 
+})
+
+$('#two').click( function(){
+
+})
+
+
+$('#three').click( function(){
+ 
+})
+
+
+$('#four').click( function(){
+ 
+})
+
+$('#five').click( function(){
+ 
+})
+
+
+
+});
+</script>
+
+
+<script type="text/javascript">
+	function showContent(){	
+	var e  = document.getElementById('sub-button');
+	if(e.style.display == 'block')
+          e.style.display = 'none';
+       else
+          e.style.display = 'block';
+	
+	/*document.getElementById("sub-button").style.visibility="visible";
+	return	document.getElementById("sub-button").style.visibility;*/
+		}
+		
+		
+	function hideContent(){	
+	var e  = document.getElementById('sub-button');
+	if(e.style.display == 'block')
+          e.style.display = 'none';
+       else
+          e.style.display = 'block';
+	
+	/*document.getElementById("sub-button").style.visibility="visible";
+	return	document.getElementById("sub-button").style.visibility;*/
+		}	
+	
+	
+</script>
+</head>
+
+<body>
+
+<div class="header">
+
+<div class="drop-box">
+<input id="drop" type="button" value="News" onclick="showContent()" />
+
+<div id="sub-button">
+<a href="index.html"><input id="one" type="button" name="" value="News" class="uk-button" onclick="hideContent()"  /></a>
+<a href="aboutUs.html"><input id="two" type="button" name="" value="About Us" class="africa-button"  onclick="hideContent()"/></a>
+<a href="contactUs.html"><input id="three" type="button" name="" value="Contact Us" class="asia-button" onclick="hideContent()" /></a>
+</div>
+</div>
+</div>
+
+<div class="category">
+<ul>
+<li><a href="aajtakPage.html">Times Of India</a></li>
+<li><a href="bbcPage.html">BBC News</a></li>
+<li><a href="cnbcPage.html">NBC News</a></li>
+<li><a href="cnnPage.html">CNN News</a></li>
+<li><a href="second.html">Fox News</a></li>
+
+</ul>
+</div>
+
+
+</body>
+</html>

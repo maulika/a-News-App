@@ -1,0 +1,139 @@
+/* CSS Document */
+body{
+background:url(../images/background.png);
+}
+.header{
+background:url(../images/news_header_01.png)no-repeat;
+background-size:320px 58px;
+width:320px;
+height:58px;
+margin:-8px;
+padding:0;
+float:left;
+position:relative;
+}
+
+.drop-box #drop{
+border:none;
+background:url(../images/arrow_03.png) bottom right no-repeat;
+width:100px;
+height:58px;
+float:left;
+line-height:58px;
+color:#FFFFFF;
+}
+
+#sub-button input{
+border:none;
+width:100px;
+height:58px;
+float:left;
+line-height:58px;
+background-color:#C85C94;
+border-bottom:solid 1px #990000;
+color:#FFFFFF;
+}
+
+#sub-button{
+	display:none;
+	background:url(images/dropdown_bg_06.png)repeat;
+	/*padding: 10px;*/
+	width: 100px;
+	box-shadow: 0 1px 1px rgba(50, 50, 50, 0.1);
+    color: #CDCCCC;
+    cursor: pointer;
+    float: left;
+	clear: both;
+    font-weight: bold;
+	border-radius:7px;
+	border:none;
+	font-family: arial;
+    font-size: 17px;
+	margin-top: 0px;
+
+}
+
+.category{
+margin:0;
+padding:0;
+float:left;
+width:320px;
+height:auto;
+}
+
+.category ul{
+margin:0;
+padding:0;
+float:left;
+
+}
+
+.category li{
+float:left;
+height: 55px;
+line-height: 55px;
+list-style: none outside none;
+width: 300px;
+padding-left:0;
+background:url(../images/list_line_02.png)bottom center no-repeat;
+}
+
+
+#list ul{
+
+margin:0;
+padding:0;
+}
+
+#list li{
+margin: 0;
+padding: 0;
+font-family:arial;
+font-size: 13px;
+background:url(../images/list_line_02.png)bottom center no-repeat;
+list-style:none;
+line-height:30px;
+}
+
+#list li a{
+text-decoration:none;
+color:#C85C94;
+
+}
+
+
+.glass-container{
+ position: fixed;
+    right: 0;
+margin-right:17px;
+margin-top:17px;
+
+
+}
+
+#editor{
+margin:0;
+padding:0;
+float:left;
+display:none;
+width:150px;
+left:104px;
+position:fixed;
+}
+
+.filterinput{
+	border:none;
+	border-bottom:1px solid #FFFFFF;
+	background:#C85C94;
+	color:#FFFFFF;
+	height: 30px;
+    margin-left: 10px;
+    margin-top: -71px;
+    width: 115px;
+
+}
+
+#editor img{
+ margin-top: 20px;
+ float:right;
+}
