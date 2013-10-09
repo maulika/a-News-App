@@ -24,6 +24,7 @@ height:58px;
 float:left;
 line-height:58px;
 color:#FFFFFF;
+
 }
 
 #sub-button input{
@@ -116,18 +117,4 @@ float: left;
 
 
 
-@media screen and (max-width: 640px) {
 
-
-.header{
-background:url(../images/news_header_01.png);
-background-size:640px 58px;
-width:640px;
-height:58px;
-margin:-8px;
-padding:0;
-float:left;
-position:relative;
-
-}
-}
