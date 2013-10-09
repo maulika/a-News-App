@@ -135,6 +135,6 @@ position:fixed;
 }
 
 #editor img{
- 
+ margin-top:-6px;
  float:right;
 }
